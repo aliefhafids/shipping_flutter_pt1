@@ -15,8 +15,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State < HomeScreen > {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: CustomScrollView(
+    return CustomScrollView(
         slivers: < Widget > [
           SliverAppBar(
             title: Padding(
@@ -103,7 +102,7 @@ class _HomeScreenState extends State < HomeScreen > {
                                               color: Theme.of(context).backgroundColor,
                                             ),
                                             child: SvgPicture.asset(
-                                              'assets/icon_qrcode.svg',
+                                              'icon_qrcode.svg',
                                             ),
                                         )
                                     ],
@@ -240,7 +239,7 @@ class _HomeScreenState extends State < HomeScreen > {
                                         style: Theme.of(context).textTheme.bodyText2,
                                       ),
                                       SvgPicture.asset(
-                                        'assets/icon_details.svg')
+                                        'icon_details.svg')
                                     ],
                                   ),
                                   Container(
@@ -257,8 +256,6 @@ class _HomeScreenState extends State < HomeScreen > {
               }),
             ),
         ],
-      ),
-      bottomNavigationBar: const MyBottomNavigationBar(),
     );
   }
 }

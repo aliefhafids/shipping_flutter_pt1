@@ -29,18 +29,18 @@ class _MyBottomNavigationBarState extends State < MyBottomNavigationBar > {
       items: < BottomNavigationBarItem > [
         BottomNavigationBarItem(
           icon: _selectedIndex == 0 ?
-          SvgPicture.asset('assets/icon_my_parcels.svg') :
-          SvgPicture.asset('assets/icon_my_parcels_grey.svg'),
+          SvgPicture.asset('icon_my_parcels.svg') :
+          SvgPicture.asset('icon_my_parcels_grey.svg'),
           label: 'My parcels'),
         BottomNavigationBarItem(
           icon: _selectedIndex == 1 ?
-          SvgPicture.asset('assets/icon_send_parcel.svg') :
-          SvgPicture.asset('assets/icon_send_parcel_grey.svg'),
+          SvgPicture.asset('icon_send_parcel.svg') :
+          SvgPicture.asset('icon_send_parcel_grey.svg'),
           label: 'Send parcel'),
         BottomNavigationBarItem(
           icon: _selectedIndex == 2 ?
-          SvgPicture.asset('assets/icon_parcel_center.svg') :
-          SvgPicture.asset('assets/icon_parcel_center_grey.svg'),
+          SvgPicture.asset('icon_parcel_center.svg') :
+          SvgPicture.asset('icon_parcel_center_grey.svg'),
           label: 'Parcel center'),
       ],
       currentIndex: _selectedIndex,
